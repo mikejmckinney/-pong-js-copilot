@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    font-family: 'Courier New', Courier, monospace;
+    color: #eee;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #00ff88;
+    text-shadow: 0 0 10px #00ff88;
+    letter-spacing: 5px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.score {
+    background-color: rgba(0, 255, 136, 0.1);
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: 2px solid #00ff88;
+    min-width: 120px;
+}
+
+.score h2 {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    color: #00ff88;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.score p {
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: bold;
+}
+
+.divider {
+    font-size: 2em;
+    color: #00ff88;
+}
+
+#pongCanvas {
+    display: block;
+    background-color: #000;
+    border: 3px solid #00ff88;
+    margin: 30px auto;
+    box-shadow: 0 0 20px #00ff88;
+    border-radius: 5px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls p {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    color: #ccc;
+}
+
+.controls strong {
+    color: #00ff88;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 0 10px;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #00ff88;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #00dd77;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ff88;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .scoreboard {
+        gap: 20px;
+    }
+
+    #pongCanvas {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 0.85em;
+        margin: 5px;
+    }
+}
