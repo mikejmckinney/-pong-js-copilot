@@ -2,6 +2,12 @@
 
 A classic Pong game built with HTML5, CSS3, and vanilla JavaScript. Play against a computer opponent in this timeless arcade game.
 
+## 🎮 Play Online
+
+**[Play the game here!](https://mikejmckinney.github.io/-pong-js-copilot/)**
+
+No download required - just click and play in your browser!
+
 ## Features
 
 - **Two Player Modes**: Control the left paddle while the computer controls the right paddle
